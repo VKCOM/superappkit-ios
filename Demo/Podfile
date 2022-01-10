@@ -3,5 +3,7 @@ inhibit_all_warnings!
 
 target 'SuperAppKitPlatformDemo' do
   use_frameworks!
-  pod 'SuperAppKit'
+  
+  pod 'SuperAppKit', '0.60.7357816'
+
 end
