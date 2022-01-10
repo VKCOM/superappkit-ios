@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		3ABF96E015971AFAD4185B28 /* Pods_SuperAppKitPlatformDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperAppKitPlatformDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FE226C9430FEA45AB5FB41E /* Pods-SuperAppKitPlatformDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperAppKitPlatformDemo.release.xcconfig"; path = "../superappkit-ios-platform-demo/Pods/Target Support Files/Pods-SuperAppKitPlatformDemo/Pods-SuperAppKitPlatformDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8FE226C9430FEA45AB5FB41E /* Pods-SuperAppKitPlatformDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperAppKitPlatformDemo.release.xcconfig"; path = "../Demo/Pods/Target Support Files/Pods-SuperAppKitPlatformDemo/Pods-SuperAppKitPlatformDemo.release.xcconfig"; sourceTree = "<group>"; };
 		95479177272C350600BFF2B6 /* SuperAppKitPlatformDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperAppKitPlatformDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9547917A272C350600BFF2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9547917E272C350600BFF2B6 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +25,7 @@
 		95479186272C350900BFF2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95479188272C350900BFF2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95DC267E276220C4004EF489 /* Bundle+AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+AppIcon.swift"; sourceTree = "<group>"; };
-		A54EF1F37BDEC4148A5B49B1 /* Pods-SuperAppKitPlatformDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperAppKitPlatformDemo.debug.xcconfig"; path = "../superappkit-ios-platform-demo/Pods/Target Support Files/Pods-SuperAppKitPlatformDemo/Pods-SuperAppKitPlatformDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A54EF1F37BDEC4148A5B49B1 /* Pods-SuperAppKitPlatformDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperAppKitPlatformDemo.debug.xcconfig"; path = "../Demo/Pods/Target Support Files/Pods-SuperAppKitPlatformDemo/Pods-SuperAppKitPlatformDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
