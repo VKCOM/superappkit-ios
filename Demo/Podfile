@@ -1,4 +1,4 @@
-platform :ios, '10.0'
+platform :ios, '11.4'
 inhibit_all_warnings!
 
 source 'https://github.com/CocoaPods/Specs.git'
@@ -6,6 +6,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'SuperAppKitPlatformDemo' do
   use_frameworks!
   
-  pod 'SuperAppKit', '0.60.7357816'
+  pod 'SuperAppKit', '0.61.7381094'
 
 end

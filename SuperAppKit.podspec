@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SuperAppKit'
-  s.version = '0.60.7357816'
+  s.version = '0.61.7381094'
   s.summary = 'SuperAppKit'
   s.authors = 'VK.com'
   
@@ -32,7 +32,7 @@ THIRD PARTIES FOR ANY DAMAGE IN CONNECTION WITH USE OF THE SOFTWARE.
     LICENSE
   }
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.4'
   s.swift_version = '5.0'
   s.cocoapods_version = '>= 1.9.0'
 
@@ -161,32 +161,10 @@ THIRD PARTIES FOR ANY DAMAGE IN CONNECTION WITH USE OF THE SOFTWARE.
     ss.ios.dependency 'SuperAppKit/ValetteKit'
     ss.ios.dependency 'SuperAppKit/Warhol'
     ss.ios.dependency 'SuperAppKit/Milligan'
-    ss.ios.dependency 'SuperAppKit/VKAuthInfrastructure'
-    ss.ios.dependency 'SuperAppKit/VKAuthNetworking'
-    ss.ios.dependency 'SuperAppKit/VKAuthPersistence'
     ss.ios.dependency 'NotifySDK/Verify', '>= 1.7.1'
     ss.ios.dependency 'AppAuth', '1.4.0'
     ss.resources = 'VKAuth.bundle'
     ss.vendored_frameworks = 'VKAuth.xcframework'
-  end
-  
-  s.subspec 'VKAuthInfrastructure' do |ss|
-    ss.resources = 'VKAuthInfrastructure.bundle'
-    ss.vendored_frameworks = 'VKAuthInfrastructure.xcframework'
-  end
-  
-  s.subspec 'VKAuthNetworking' do |ss|
-    ss.ios.dependency 'SuperAppKit/APILayer'
-    ss.ios.dependency 'SuperAppKit/KulibinNetworking'
-    ss.ios.dependency 'SuperAppKit/VKAuthInfrastructure'
-    ss.resources = 'VKAuthNetworking.bundle'
-    ss.vendored_frameworks = 'VKAuthNetworking.xcframework'
-  end
-  
-  s.subspec 'VKAuthPersistence' do |ss|
-    ss.ios.dependency 'SuperAppKit/VKAuthInfrastructure'
-    ss.resources = 'VKAuthPersistence.bundle'
-    ss.vendored_frameworks = 'VKAuthPersistence.xcframework'
   end
   
   s.subspec 'VKSVGImage' do |ss|
@@ -210,6 +188,6 @@ THIRD PARTIES FOR ANY DAMAGE IN CONNECTION WITH USE OF THE SOFTWARE.
   s.resources = 'SuperAppKit.bundle'
   s.vendored_frameworks = 'SuperAppKit.xcframework'
   s.source = {
-    :http => 'https://artifactory-external.vkpartner.ru/artifactory/superappkit/0.60.7357816/SuperAppKit-0.60.7357816.tar.gz'
+    :http => 'https://artifactory-external.vkpartner.ru/artifactory/superappkit/0.61.7381094/SuperAppKit-0.61.7381094.tar.gz'
   }
 end
