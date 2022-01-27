@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SuperAppKit'
-  s.version = '0.62.7431543'
+  s.version = '0.63.7488595'
   s.summary = 'SuperAppKit'
   s.authors = 'VK.com'
   
@@ -162,7 +162,6 @@ THIRD PARTIES FOR ANY DAMAGE IN CONNECTION WITH USE OF THE SOFTWARE.
     ss.ios.dependency 'SuperAppKit/Warhol'
     ss.ios.dependency 'SuperAppKit/Milligan'
     ss.ios.dependency 'NotifySDK/Verify', '>= 1.7.1'
-    ss.ios.dependency 'AppAuth', '1.4.0'
     ss.resources = 'VKAuth.bundle'
     ss.vendored_frameworks = 'VKAuth.xcframework'
   end
@@ -188,6 +187,6 @@ THIRD PARTIES FOR ANY DAMAGE IN CONNECTION WITH USE OF THE SOFTWARE.
   s.resources = 'SuperAppKit.bundle'
   s.vendored_frameworks = 'SuperAppKit.xcframework'
   s.source = {
-    :http => 'https://artifactory-external.vkpartner.ru/artifactory/superappkit/0.62.7431543/SuperAppKit-0.62.7431543.tar.gz'
+    :http => 'https://artifactory-external.vkpartner.ru/artifactory/superappkit/0.63.7488595/SuperAppKit-0.63.7488595.tar.gz'
   }
 end
