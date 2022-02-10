@@ -6,6 +6,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'SuperAppKitPlatformDemo' do
   use_frameworks!
   
-  pod 'SuperAppKit', '0.64.7537218'
+  pod 'SuperAppKit', '0.65.7587804'
 
 end
