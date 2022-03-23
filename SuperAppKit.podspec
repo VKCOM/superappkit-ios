@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SuperAppKit'
-  s.version = '0.70.7822777'
+  s.version = '0.71.7871697'
   s.summary = 'SuperAppKit'
   s.authors = 'VK.com'
   
@@ -186,6 +186,6 @@ THIRD PARTIES FOR ANY DAMAGE IN CONNECTION WITH USE OF THE SOFTWARE.
   s.resources = 'SuperAppKit.bundle'
   s.vendored_frameworks = 'SuperAppKit.xcframework'
   s.source = {
-    :http => 'https://artifactory-external.vkpartner.ru/artifactory/superappkit/0.70.7822777/SuperAppKit-0.70.7822777.tar.gz'
+    :http => 'https://artifactory-external.vkpartner.ru/artifactory/superappkit/0.71.7871697/SuperAppKit-0.71.7871697.tar.gz'
   }
 end
