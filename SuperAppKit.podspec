@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SuperAppKit'
-  s.version = '0.78.8291038'
+  s.version = '0.79.8330967'
   s.summary = 'SuperAppKit'
   s.authors = 'VK.com'
   
@@ -161,6 +161,7 @@ THIRD PARTIES FOR ANY DAMAGE IN CONNECTION WITH USE OF THE SOFTWARE.
     ss.ios.dependency 'SuperAppKit/ValetteKit'
     ss.ios.dependency 'SuperAppKit/Warhol'
     ss.ios.dependency 'SuperAppKit/Milligan'
+    ss.ios.dependency 'SuperAppKit/VKAccessibilityIdentifier'
     ss.resources = 'VKAuth.bundle'
     ss.vendored_frameworks = 'VKAuth.xcframework'
   end
@@ -179,6 +180,11 @@ THIRD PARTIES FOR ANY DAMAGE IN CONNECTION WITH USE OF THE SOFTWARE.
     ss.vendored_frameworks = 'Warhol.xcframework'
   end
 
+  s.subspec 'VKAccessibilityIdentifier' do |ss|
+    ss.resources = 'VKAccessibilityIdentifier.bundle'
+    ss.vendored_frameworks = 'VKAccessibilityIdentifier.xcframework'
+  end
+
   flags = { 'OTHER_LDFLAGS' => '-ObjC -all_load' }
   s.pod_target_xcconfig  = flags
   s.user_target_xcconfig = flags
@@ -186,6 +192,6 @@ THIRD PARTIES FOR ANY DAMAGE IN CONNECTION WITH USE OF THE SOFTWARE.
   s.resources = 'SuperAppKit.bundle'
   s.vendored_frameworks = 'SuperAppKit.xcframework'
   s.source = {
-    :http => 'https://artifactory-external.vkpartner.ru/artifactory/superappkit/0.78.8291038/SuperAppKit-0.78.8291038.tar.gz'
+    :http => 'https://artifactory-external.vkpartner.ru/artifactory/superappkit/0.79.8330967/SuperAppKit-0.79.8330967.tar.gz'
   }
 end
