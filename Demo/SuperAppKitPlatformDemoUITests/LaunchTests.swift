@@ -26,17 +26,25 @@
 //  THIRD PARTIES FOR ANY DAMAGE IN CONNECTION WITH USE OF THE SOFTWARE.
 //
 
-import UIKit
+import XCTest
 
-extension Bundle {
-    public var appIcon: UIImage? {
-        guard
-            let icons = infoDictionary?["CFBundleIcons"] as? [String: Any],
-            let primary = icons["CFBundlePrimaryIcon"] as? [String: Any],
-            let files = primary["CFBundleIconFiles"] as? [String],
-            let icon = files.last else {
-            return nil
-        }
-        return UIImage(named: icon)
+final class SuperAppKitPlatformDemoUITestsLaunchTests: XCTestCase {
+
+    override func setUpWithError() throws {
+        continueAfterFailure = false
+    }
+
+    func testSuccessfulLaunch() throws {
+        let app = XCUIApplication()
+        app.launch()
+
+        XCTAssertTrue(
+            app
+                .descendants(matching: .any)
+                .matching(identifier: "start_screen.auth_button")
+                .element
+                .waitForExistence(timeout: 4),
+            "Auth button not found on start screen"
+        )
     }
 }

@@ -24,5 +24,11 @@
 	<array>
 		<string>vkauthorize-silent</string>
 	</array>
+	<key>SilentTokenExchangeURL</key>
+	<string></string>
+	<key>ClientId</key>
+	<string></string>
+	<key>ClientSecret</key>
+	<string></string>
 </dict>
 </plist>

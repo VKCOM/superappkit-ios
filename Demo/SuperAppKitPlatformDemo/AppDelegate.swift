@@ -26,53 +26,62 @@
 //  THIRD PARTIES FOR ANY DAMAGE IN CONNECTION WITH USE OF THE SOFTWARE.
 //
 
-import UIKit
 import SuperAppKit
+import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    #error("Enter your client id here")
-    static let clientId = ""
-    
-    #error("Enter your client secret here")
-    static let clientSecret = ""
-    
+
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
+
+        guard
+            let clientId = Bundle.main.infoDictionary?["ClientId"] as? String,
+            let clientSecret = Bundle.main.infoDictionary?["ClientSecret"] as? String
+        else {
+            fatalError(
+                "Add ClientId and ClientSecret fields, containing your app credentials, to configuration file (Info.plist) of demo app"
+            )
+        }
+
         let sakInitializer = SAKInitializer()
-        sakInitializer.clientId = Self.clientId
-        sakInitializer.clientSecret = Self.clientSecret
+        sakInitializer.clientId = clientId
+        sakInitializer.clientSecret = clientSecret
         sakInitializer.externalDeviceId = UIDevice.current.identifierForVendor!.uuidString
         sakInitializer.shouldUseSystemAppearance = true
-        
+
         guard sakInitializer.initialize() else {
-          fatalError("SAK not initialized")
+            fatalError("SAK not initialized")
         }
-        
+
         window = UIWindow()
         window?.rootViewController = AuthViewController()
         window?.makeKeyAndVisible()
-        
+
         return true
     }
-    
+
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
         if Auth.universalAuthInteropHandler.handle(with: url) {
             return true
         }
-        
+
         return false
     }
-    
-    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+
+    func application(
+        _ application: UIApplication,
+        continue userActivity: NSUserActivity,
+        restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void
+    ) -> Bool {
         if Auth.universalAuthInteropHandler.handle(with: userActivity.webpageURL) {
             return true
         }
-        
+
         return false
     }
 }
-
