@@ -78,10 +78,7 @@ final class AuthViewController: UIViewController {
     }
 
     private func showExternalAuth() {
-        let configuration = AuthConfiguration(
-            configuration: appConfiguration,
-            nativeAuth: true
-        )
+        let configuration = AuthConfiguration.externalConfiguration(with: appConfiguration)
         configuration.delegate = self
         guard let viewController = AuthFactory.viewController(for: configuration) else {
             return
